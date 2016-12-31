@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+<menu id="apps-editors-menu" label="Editors">
+  <item label="Sublime Text 2">
+   <action name="Execute">
+    <command>sublime_text</command>
+    <startupnotify>
+     <enabled>yes</enabled>
+    </startupnotify>
+   </action>
+  </item>
+  <item label="Sublime Text 3">
+   <action name="Execute">
+    <command>sublime_text_3</command>
+    <startupnotify>
+     <enabled>yes</enabled>
+    </startupnotify>
+   </action>
+  </item>
+  <item label="Atom">
+   <action name="Execute">
+    <command>atom</command>
+    <startupnotify>
+     <enabled>yes</enabled>
+    </startupnotify>
+   </action>
+  </item>
+</menu>
+
+<menu id="apps-term-menu" label="Terminals">
+  <item label="xfce4-terminal">
+    <action name="Execute">
+      <command>xfce4-terminal</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Xterm">
+    <action name="Execute"><command>xterm</command></action>
+  </item>
+</menu>
+
+<menu id="apps-net-menu" label="Internet">
+  <item label="Skype">
+   <action name="Execute">
+    <command>skype</command>
+   </action>
+  </item>
+  <item label="Firefox">
+    <action name="Execute">
+      <command>firefox-bin</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Firefox</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Chromium">
+    <action name="Execute">
+      <command>chromium</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Chromium</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Wireshark GTK">
+   <action name="Execute">
+    <command>bash -c "GTK_THEME=Adwaita wireshark-gtk"</command>
+    <startupnotify>
+     <enabled>yes</enabled>
+    </startupnotify>
+   </action>
+  </item>
+  <item label="Transmission GTK">
+   <action name="Execute">
+    <command>transmission-gtk</command>
+    <startupnotify>
+     <enabled>yes</enabled>
+    </startupnotify>
+   </action>
+  </item>
+</menu>
+
+<menu id="apps-office-menu" label="Office">
+  <item label="Evince">
+    <action name="Execute">
+      <command>evince</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-graphics-menu" label="Graphics">
+  <item label="Gimp">
+    <action name="Execute">
+      <command>gimp</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Redshift">
+    <action name="Execute">
+      <command>redshift -l 59.766536:10.122950</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="tint2 taskbar">
+    <action name="Execute">
+      <command>tint2 -c /home/nor/.config/tint2/tint2rc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="tint2 desktop-switcher">
+    <action name="Execute">
+      <command>tint2 -c /home/nor/.config/tint2/desktop-switcher-rc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+  </action>
+  </item>
+  <item label="tint2 killall">
+    <action name="Execute">
+      <command>killall tint2</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="system-menu" label="System">
+  <item label="Openbox Configuration Manager">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <separator />
+  <item label="Reconfigure Openbox">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Applications" />
+  <menu id="apps-editors-menu"/>
+  <menu id="apps-net-menu"/>
+  <menu id="apps-office-menu"/>
+  <menu id="apps-term-menu"/>
+  <menu id="apps-graphics-menu"/>
+  <separator label="System" />
+  <menu id="system-menu"/>
+  <separator />
+  <item label="Log Out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>
