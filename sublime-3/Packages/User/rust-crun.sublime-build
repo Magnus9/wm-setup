@@ -1,0 +1,3 @@
+{
+    "shell_cmd": "cd /home/nor/interpreter/ && rustc -o main main.rs && ./main"
+}

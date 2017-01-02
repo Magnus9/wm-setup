@@ -1,0 +1,21 @@
+{
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Tomorrow.tmTheme",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Material Theme",
+		"Vintage"
+	],
+	"tab_size": 4,
+	"theme": "Boxy Tomorrow.sublime-theme",
+	"theme_accent_lime": true,
+	"theme_font_sm": true,
+	"theme_sidebar_disclosure": true,
+	"theme_sidebar_heading_bold": true,
+	"theme_sidebar_size_xl": true,
+	"theme_tab_rounded": true,
+	"theme_tab_selected_filled": true,
+	"theme_tab_size_sm": true,
+	"translate_tabs_to_spaces": true,
+	"use_tab_stops": true
+}
